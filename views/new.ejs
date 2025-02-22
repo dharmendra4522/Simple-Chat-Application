@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write new chats</title>
+    <style>
+        /* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+h3 {
+    color: #128c7e;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+form {
+    background: #ffffff;
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Input Fields */
+input[type="text"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Textarea */
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Create Chat Button */
+button {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #128c7e;
+}
+
+    </style>
+</head>
+<body>
+    <h3>Write new cha...</h3>
+    <form method="POST" action="/chats">
+        <input type="text" name="from" placeholder="who are you">
+        <br>
+        <br>
+        <textarea name="msg" > Write your messages here....</textarea>
+        <br>
+        <br>
+        <input type="text" name="to" placeholder="add reciver">
+        <br>
+        <br>
+        <button>Create Chat</button>
+    </form>
+</body>
+</html>
